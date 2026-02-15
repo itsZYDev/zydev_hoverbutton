@@ -1,22 +1,67 @@
-.container {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.container button {
+body {
+  overflow: hidden;
+}
+
+.backdrop {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 0%;
+}
+
+.backdrop.show {
+  opacity: 30%;
+}
+
+.button-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 20px;
   all: unset;
-  height: 55px;
+  background-color: aqua;
   width: 120px;
-  background-color: rgb(57, 72, 160);
-  color: antiquewhite;
-  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
 }
 
-.container button:hover {
-  transition-duration: 0.5s;
-  height: 65px;
-  width: 135px;
+button:hover {
+  transition: 0.5s;
+  background-color: blue;
+  color: #fff;
+  width: 130px;
+  height: 70px;
+}
+
+.popup-modal {
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  text-align: center;
+  opacity: 0%;
+}
+
+.popup-modal.show {
+  opacity: 100%;
+  pointer-events: all;
 }

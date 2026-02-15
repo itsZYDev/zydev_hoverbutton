@@ -7,8 +7,14 @@
     <title>Hover Button</title>
   </head>
   <body>
-    <div class="container">
-      <button>Hover Me!</button>
+    <div class="backdrop"></div>
+    <div class="popup-modal">
+      <button id="close-modal">close modal</button>
+      <p>Thanks for clicking!</p>
     </div>
+    <div class="button-container">
+      <button id="trigger-modal" onclick="toggleModel()">Hover Me!</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
