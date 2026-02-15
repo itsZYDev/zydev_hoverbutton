@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container button {
+  all: unset;
+  height: 55px;
+  width: 120px;
+  background-color: rgb(57, 72, 160);
+  color: antiquewhite;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.container button:hover {
+  transition-duration: 0.5s;
+  height: 65px;
+  width: 135px;
+}
